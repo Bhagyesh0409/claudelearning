@@ -1,0 +1,58 @@
+# Phase 1: web (nginx serving the built React site) + ngrok tunnel.
+# Phase 2/3 services (api, db) are sketched at the bottom. See decisions/0003.
+#
+#   docker compose up --build -d     # start everything
+#   docker compose up --build web    # local only, no tunnel (no ngrok token needed)
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      args:
+        VITE_DATA_SOURCE: ${VITE_DATA_SOURCE:-static}
+    image: portfolio-web:latest
+    ports:
+      - "${WEB_PORT:-8080}:80"
+    restart: unless-stopped
+
+  ngrok:
+    image: ngrok/ngrok:3-alpine
+    command: ["http", "web:80", "--log", "stdout"]
+    environment:
+      NGROK_AUTHTOKEN: ${NGROK_AUTHTOKEN:-} # set in .env (see .env.example)
+    ports:
+      - "4040:4040" # ngrok inspector: http://localhost:4040 shows the public URL
+    depends_on:
+      web:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # ---- Phase 2: backend API (decisions/0005) ----
+  # api:
+  #   build: ./backend
+  #   environment:
+  #     DATABASE_URL: ${DATABASE_URL}
+  #     PORT: 3000
+  #   depends_on:
+  #     db:
+  #       condition: service_healthy
+  #   restart: unless-stopped
+  #
+  # ---- Phase 3: database ----
+  # db:
+  #   image: postgres:16-alpine
+  #   environment:
+  #     POSTGRES_USER: ${POSTGRES_USER}
+  #     POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+  #     POSTGRES_DB: ${POSTGRES_DB}
+  #   volumes:
+  #     - pgdata:/var/lib/postgresql/data
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER}"]
+  #     interval: 10s
+  #     retries: 5
+  #   restart: unless-stopped
+
+# volumes:
+#   pgdata:

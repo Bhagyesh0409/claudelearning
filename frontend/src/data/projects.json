@@ -1,0 +1,32 @@
+[
+  {
+    "id": "incident-management-system",
+    "title": "Incident Management System",
+    "summary": "ASP.NET Core app for logging, tracking and resolving incidents.",
+    "description": "A sample incident management application built with ASP.NET Core for learning and testing. TODO: describe the key features, your role, and what you learned.",
+    "tech": ["C#", "ASP.NET Core"],
+    "repoUrl": "https://github.com/Bhagyesh0409/IncidentManagementSystem",
+    "featured": true,
+    "order": 1
+  },
+  {
+    "id": "smartopsai-website",
+    "title": "SmartOpsAI Website",
+    "summary": "TODO: one-line pitch for this project.",
+    "description": "TODO: describe what the site does, who it is for, and the tech behind it.",
+    "tech": ["Web"],
+    "repoUrl": "https://github.com/Bhagyesh0409/smartopsai-website",
+    "featured": true,
+    "order": 2
+  },
+  {
+    "id": "claudelearning",
+    "title": "Claude Learning",
+    "summary": "Experiments and test reports from working with Claude AI.",
+    "description": "A sandbox for learning AI-assisted development with Claude. This portfolio site was itself planned and built as part of it. TODO: update once the repo has content.",
+    "tech": ["AI", "Claude"],
+    "repoUrl": "https://github.com/Bhagyesh0409/claudelearning",
+    "featured": false,
+    "order": 1
+  }
+]

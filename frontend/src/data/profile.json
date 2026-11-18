@@ -1,0 +1,13 @@
+{
+  "name": "Bhagyesh Dhamecha",
+  "headline": "Software Engineer · DevOps & Cloud",
+  "tagline": "TODO: one sentence on what you build and what you care about.",
+  "about": [
+    "TODO: 2–3 sentences about your background, current role and focus areas.",
+    "TODO: what you're learning or exploring right now (e.g. DevOps, Terraform, Docker, AI-assisted development)."
+  ],
+  "githubUrl": "https://github.com/Bhagyesh0409",
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/Bhagyesh0409" }
+  ]
+}
