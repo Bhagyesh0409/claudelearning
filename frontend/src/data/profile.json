@@ -1,13 +1,53 @@
 {
   "name": "Bhagyesh Dhamecha",
-  "headline": "Software Engineer · DevOps & Cloud",
-  "tagline": "TODO: one sentence on what you build and what you care about.",
+  "headline": "Expert Site Reliability Engineer",
+  "tagline": "I keep critical healthcare systems fast, available and boring in the best way. 15+ years turning Microsoft and Azure infrastructure into reliable, observable, automated platforms.",
   "about": [
-    "TODO: 2–3 sentences about your background, current role and focus areas.",
-    "TODO: what you're learning or exploring right now (e.g. DevOps, Terraform, Docker, AI-assisted development)."
+    "I'm a Site Reliability Engineer with 15+ years of hands-on experience across the Microsoft technology stack, currently at Altera Digital Health, where uptime directly affects clinicians and patients. My work sits where infrastructure, operations and software meet: defining what \"reliable\" means, measuring it, and engineering systems to meet it.",
+    "I've led incident response for production outages, driven blameless root-cause analysis, and replaced manual runbooks with automation. My foundation is broad, from Windows Server and Active Directory to VMware virtualization, Cisco networking and Microsoft Azure, so I can debug a problem at every layer instead of handing it off.",
+    "Today I focus on bringing modern SRE and DevOps practice to established platforms: SLOs and error budgets, observability, infrastructure as code with Terraform, containerization with Docker, and CI/CD. I'm also exploring how AI-assisted engineering can make operations teams faster and safer. This site, containerized and served by nginx, is one of those experiments."
   ],
+  "location": "Vadodara, Gujarat, India",
   "githubUrl": "https://github.com/Bhagyesh0409",
   "links": [
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/bhagyesh-dhamecha-27bbb130" },
     { "label": "GitHub", "url": "https://github.com/Bhagyesh0409" }
+  ],
+  "highlights": [
+    { "value": "15+", "label": "Years in production engineering" },
+    { "value": "Azure", "label": "Certified Administrator (AZ-104)" },
+    { "value": "24×7", "label": "Healthcare-grade reliability" }
+  ],
+  "skills": [
+    {
+      "category": "Reliability Engineering",
+      "skills": ["SLOs / SLIs & error budgets", "Incident management & on-call", "Blameless postmortems / RCA", "Capacity planning", "High availability & DR", "Runbook automation"]
+    },
+    {
+      "category": "Observability",
+      "skills": ["Monitoring & alerting", "Log analytics", "Azure Monitor", "Dashboards & KPIs", "Performance tuning"]
+    },
+    {
+      "category": "Cloud & Infrastructure",
+      "skills": ["Microsoft Azure", "Windows Server", "Active Directory", "IIS", "VMware vSphere", "Networking (Cisco)"]
+    },
+    {
+      "category": "DevOps & Automation",
+      "skills": ["PowerShell", "Terraform", "Docker", "CI/CD (Azure DevOps, Jenkins)", "Git", "nginx"]
+    },
+    {
+      "category": "Microsoft Platform",
+      "skills": [".NET / ASP.NET Core", "SQL Server", "Windows clustering"]
+    },
+    {
+      "category": "Service Management",
+      "skills": ["ITIL", "Change & problem management", "Stakeholder communication"]
+    }
+  ],
+  "certifications": [
+    { "name": "Microsoft Certified: Azure Administrator (AZ-104)", "issuer": "Microsoft" },
+    { "name": "VMware Certified Professional 5 (VCP5)", "issuer": "VMware" },
+    { "name": "Cisco Certified Network Associate (CCNA)", "issuer": "Cisco" },
+    { "name": "ITIL Foundations (Cert Prep)", "issuer": "LinkedIn Learning" }
   ]
 }

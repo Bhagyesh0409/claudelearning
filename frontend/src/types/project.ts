@@ -31,6 +31,24 @@ export interface SocialLink {
   url: string;
 }
 
+export interface SkillGroup {
+  /** e.g. "Reliability Engineering" */
+  category: string;
+  skills: string[];
+}
+
+export interface Certification {
+  name: string;
+  issuer: string;
+  year?: number;
+}
+
+/** Headline stat shown in the hero, e.g. { value: "15+", label: "Years experience" }. */
+export interface Highlight {
+  value: string;
+  label: string;
+}
+
 export interface Profile {
   name: string;
   headline: string;
@@ -40,4 +58,7 @@ export interface Profile {
   location?: string;
   githubUrl: string;
   links: SocialLink[];
+  highlights?: Highlight[];
+  skills: SkillGroup[];
+  certifications?: Certification[];
 }

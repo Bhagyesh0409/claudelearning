@@ -1,6 +1,6 @@
 # 0003. Containers: nginx `web` + `ngrok` via docker-compose
 
-- **Status:** Accepted
+- **Status:** Accepted, amended by 0009 (static ngrok domain)
 - **Date:** 2026-11-18
 
 ## Context

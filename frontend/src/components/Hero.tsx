@@ -31,6 +31,17 @@ export default function Hero({ profile }: { profile: Profile }) {
           </a>
         ))}
       </div>
+      {profile.highlights && profile.highlights.length > 0 && (
+        <dl className="mt-14 grid max-w-3xl grid-cols-1 gap-6 border-t border-slate-200 pt-8 sm:grid-cols-3 dark:border-slate-800">
+          {profile.highlights.map((h) => (
+            <div key={h.label}>
+              <dt className="sr-only">{h.label}</dt>
+              <dd className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">{h.value}</dd>
+              <dd className="mt-1 text-sm text-slate-500 dark:text-slate-400">{h.label}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
     </section>
   );
 }

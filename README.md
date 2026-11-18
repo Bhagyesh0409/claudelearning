@@ -23,7 +23,8 @@ docker compose up --build -d
 | What | Where |
 |------|-------|
 | Site (local) | http://localhost:8080 |
-| Public ngrok URL | open http://localhost:4040, or run `docker compose logs ngrok` |
+| Public URL | https://decrease-usual-afterglow.ngrok-free.dev (static, set by `NGROK_DOMAIN` in `.env`) |
+| ngrok inspector | http://localhost:4040 |
 
 Local only, no tunnel: `docker compose up --build web`
 Stop: `docker compose down`

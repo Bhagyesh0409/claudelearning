@@ -27,12 +27,15 @@ Every non-trivial choice has an ADR in [`decisions/`](decisions/README.md).
 - [x] `nginx/default.conf`: SPA fallback, gzip, caching, `/healthz`, commented `/api` proxy
 - [x] `docker-compose.yml`: `web` + `ngrok`; `docker-compose.dev.yml` for hot reload
 - [x] Verify `docker compose up --build web` → http://localhost:8080 (200, healthy, SPA fallback, gzip, asset caching OK)
-- [x] Verify ngrok public URL via http://localhost:4040 (2026-11-18: public URL returned 200; URL is random per restart)
+- [x] Verify ngrok public URL via http://localhost:4040 (2026-11-18: public URL returned 200)
+- [x] Pin the static domain https://decrease-usual-afterglow.ngrok-free.dev via `NGROK_DOMAIN` (decisions/0009)
 - [x] Generate `frontend/package-lock.json` (in container); Docker build now uses `npm ci`
-- [ ] **Content (you):** replace the TODO text in `profile.json` / `projects.json`, add screenshots to `frontend/public/images/`
+- [x] Profile rewritten as "Expert Site Reliability Engineer" + LinkedIn link (decisions/0008)
+- [x] Skills section + certifications + hero highlights (decisions/0008)
+- [ ] **Content (you):** confirm the inferred About/skills claims in `profile.json`; align LinkedIn headline
+- [ ] **Content (you):** real descriptions in `projects.json` (still TODO), screenshots in `frontend/public/images/`
 
 ## Phase 1.5: Polish (optional)
-- [ ] Skills / tech-stack section
 - [ ] Contact section (links only)
 - [ ] Tech filter on the project grid
 - [ ] SEO: Open Graph / Twitter meta tags, `robots.txt`

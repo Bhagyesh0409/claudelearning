@@ -1,6 +1,6 @@
 # 0006. Phase 1 sections: Hero/About + Projects
 
-- **Status:** Accepted
+- **Status:** Accepted, amended by 0008 (Skills moved into Phase 1)
 - **Date:** 2026-11-18
 
 ## Context

@@ -15,6 +15,8 @@ To reverse a decision, add a new ADR and mark the old one `Superseded by NNNN`.
 | [0005](0005-future-backend-stack.md) | Future backend: Node (Express) + PostgreSQL | Accepted |
 | [0006](0006-phase1-sections.md) | Phase 1 sections: Hero/About + Projects | Accepted |
 | [0007](0007-docker-only-toolchain.md) | No local Node: all builds run in Docker | Accepted |
+| [0008](0008-skills-in-phase1.md) | Skills, certifications, highlights move into Phase 1 (amends 0006) | Accepted |
+| [0009](0009-ngrok-static-domain.md) | Pin the free ngrok static domain via `NGROK_DOMAIN` (amends 0003) | Accepted |
 
 ## Template
 

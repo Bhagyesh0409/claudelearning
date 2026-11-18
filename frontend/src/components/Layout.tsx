@@ -3,6 +3,7 @@ import type { Profile } from '../types/project';
 
 const NAV = [
   { href: '#about', label: 'About' },
+  { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projects' },
 ];
 

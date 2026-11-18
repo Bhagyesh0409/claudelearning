@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Layout from './components/Layout';
 import Hero from './components/Hero';
 import About from './components/About';
+import Skills from './components/Skills';
 import ProjectGrid from './components/ProjectGrid';
 import { getProfile, getProjects } from './services/projectService';
 import type { Profile, Project } from './types/project';
@@ -54,6 +55,7 @@ export default function App() {
     <Layout profile={profile}>
       <Hero profile={profile} />
       <About profile={profile} />
+      <Skills profile={profile} />
       <ProjectGrid projects={projects} />
     </Layout>
   );

@@ -18,9 +18,12 @@ services:
 
   ngrok:
     image: ngrok/ngrok:3-alpine
-    command: ["http", "web:80", "--log", "stdout"]
+    # Uses the static domain when NGROK_DOMAIN is set in .env, otherwise a random URL.
+    entrypoint: ["/bin/sh", "-c"]
+    command: ['exec ngrok http web:80 --log stdout $${NGROK_DOMAIN:+--url=https://$$NGROK_DOMAIN}']
     environment:
       NGROK_AUTHTOKEN: ${NGROK_AUTHTOKEN:-} # set in .env (see .env.example)
+      NGROK_DOMAIN: ${NGROK_DOMAIN:-}       # e.g. yourname.ngrok-free.app (decisions/0009)
     ports:
       - "4040:4040" # ngrok inspector: http://localhost:4040 shows the public URL
     depends_on:
