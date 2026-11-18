@@ -1,6 +1,6 @@
 # Tasks
 
-> **Current focus:** Phase 1 wrap-up. Add `NGROK_AUTHTOKEN` to `.env`, run `docker compose up -d`, check the public URL, and fill in the TODO content.
+> **Current focus:** Phase 1 content. Fill in the TODO text in `profile.json` / `projects.json`, add screenshots, then move to Phase 1.5 or Phase 2.
 > **Last updated:** 2026-11-18
 
 Legend: `[x]` done · `[ ]` todo · `[~]` in progress · `[!]` blocked (reason inline)
@@ -27,7 +27,7 @@ Every non-trivial choice has an ADR in [`decisions/`](decisions/README.md).
 - [x] `nginx/default.conf`: SPA fallback, gzip, caching, `/healthz`, commented `/api` proxy
 - [x] `docker-compose.yml`: `web` + `ngrok`; `docker-compose.dev.yml` for hot reload
 - [x] Verify `docker compose up --build web` → http://localhost:8080 (200, healthy, SPA fallback, gzip, asset caching OK)
-- [!] Verify ngrok public URL via http://localhost:4040 (blocked: needs `NGROK_AUTHTOKEN` in `.env`)
+- [x] Verify ngrok public URL via http://localhost:4040 (2026-11-18: public URL returned 200; URL is random per restart)
 - [x] Generate `frontend/package-lock.json` (in container); Docker build now uses `npm ci`
 - [ ] **Content (you):** replace the TODO text in `profile.json` / `projects.json`, add screenshots to `frontend/public/images/`
 
