@@ -13,8 +13,8 @@ Every non-trivial choice has an ADR in [`decisions/`](decisions/README.md).
 - [x] Create `tasks.md` and `decisions/` with ADR template + index
 - [x] Write ADRs 0001–0007
 - [x] `.gitignore`, `.dockerignore`, `.env.example`, `README.md`, `CLAUDE.md`
-- [ ] First git commit
-- [ ] Create GitHub repo and push (optional)
+- [x] First git commit (`f2dc7d6`), with `.gitattributes` forcing LF
+- [x] Pushed to https://github.com/Bhagyesh0409/claudelearning (branch `main`)
 
 ## Phase 1: Static site (nginx + Docker + ngrok)
 - [x] Scaffold Vite + React + TypeScript + Tailwind in `frontend/` (decisions/0001)
